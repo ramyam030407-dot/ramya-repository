@@ -1,0 +1,137 @@
+/* Base Styles */
+body {
+  margin: 0;
+  font-family: 'Orbitron', sans-serif;
+  background: #0f0f0f;
+  color: #00ffe0;
+}
+
+/* Header */
+header {
+  background: linear-gradient(90deg, #00ffe0, #ff00c8);
+  color: #fff;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 0 20px #00ffe0;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 36px;
+  text-shadow: 0 0 10px #ff00c8;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0 0;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ff00c8;
+}
+
+/* Sections */
+section {
+  padding: 60px 20px;
+  margin: 40px auto;
+  width: 90%;
+  max-width: 1000px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0,255,255,0.2);
+}
+
+section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 28px;
+}
+
+/* About Section */
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 30px;
+  justify-content: center;
+}
+
+.about-container img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border: 3px solid #00ffe0;
+  object-fit: cover;
+  box-shadow: 0 0 15px #00ffe0;
+}
+
+.about-container p {
+  max-width: 600px;
+  text-align: justify;
+  font-size: 16px;
+}
+
+/* Skill Cards */
+.skill-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 30px;
+  justify-items: center;
+}
+
+.skill-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 20px;
+  width: 100%;
+  max-width: 200px;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0,255,255,0.3);
+  transition: transform 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+}
+
+.icon {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.progress-bar {
+  background: #222;
+  border-radius: 10px;
+  height: 10px;
+  margin-top: 10px;
+  overflow: hidden;
+}
+
+.progress {
+  background: #00ffe0;
+  height: 100%;
+  border-radius: 10px;
+}
+
+/* Contact Links */
+#contact a {
+  color: #00ffe0;
+  text-decoration: underline;
+}
+@media (max-width: 768px) {
+  .skill-card {
+    flex-direction: column;
+    font-size: 14px;
+  }
+}
